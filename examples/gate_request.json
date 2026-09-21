@@ -1,0 +1,19 @@
+{
+  "contract_version": "0.1-design",
+  "provenance": "authored illustrative fixture; not a model rollout",
+  "task": "Move the object to the target location",
+  "recent_observations": {
+    "task_conditions": "target location changed after the current plan was generated",
+    "current_subgoal": "approach the previous target location"
+  },
+  "action_source": {
+    "kind": "existing_local_controller",
+    "can_hold_while_replanning": true,
+    "unexpired_action_chunk_available": false
+  },
+  "available_decisions": ["observe_again", "invoke_replanner", "defer_to_host"],
+  "unavailable_decisions": {
+    "reuse_action_chunk": "no unexpired chunk exists"
+  },
+  "budget_note": "Any future comparison must include gate, perception, summarization, and world-model costs."
+}
