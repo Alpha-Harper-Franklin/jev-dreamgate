@@ -1,8 +1,8 @@
-# DreamGate
+# Jev + WAM
 
-**Decide when a world model needs to imagine again.**
+**Combine Jev with World Action Models and world-model planning.**
 
-DreamGate will study semantic triggers for expensive world-model and World Action Model (WAM) calls. A lightweight supervisor will decide whether to reuse a valid plan, request new observations, or invoke another prediction/replanning step. Jev is the first intended semantic backend.
+The first experiment will study semantic triggers for expensive world-model and World Action Model (WAM) calls. A lightweight supervisor will decide whether to reuse a valid plan, request new observations, or invoke another prediction/replanning step. Jev is the first intended semantic backend.
 
 **Status: design-stage project.** This repository publishes the hypothesis, an example decision contract, and a proposed evaluation. There is no model integration, scheduler, benchmark result, or measured compute saving yet.
 
@@ -46,7 +46,7 @@ Threshold selection and final evaluation use separate episodes. Benefits must su
 
 ## 中文说明
 
-DreamGate 研究世界模型与 WAM 的按需调用：已有计划有效时复用，任务条件变化时补充观察或重新预测。门控发生在昂贵推理之前；跳过调用时必须仍有有效动作来源。
+Jev + WAM：研究 Jev 与世界动作模型、世界模型规划的结合。首版研究按需调用：已有计划有效时复用，任务条件变化时补充观察或重新预测。门控发生在昂贵推理之前；跳过调用时必须仍有有效动作来源。
 
 当前处于设计阶段，未完成 Jev、DreamZero 或其他模型接入，也没有节省算力的实验结论。后续以相近成功率下的实际 GPU 时间和总成本为核心指标。
 
